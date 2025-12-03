@@ -71,15 +71,17 @@
     <!-- Fixed Navigation Bar -->
     <nav class="fixed-navbar bg-white shadow-lg py-3 px-4 md:px-6 animate-fadeInDown border-b border-gray-200">
         <div class="container mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo/Branding -->
+            <!-- Logo/Branding: Updated for visual height consistency -->
             <div class="flex items-center mb-3 md:mb-0">
-                <div class="h-10 w-10 rounded-full flex items-center justify-center mr-3">
-                    <!-- logo image -->
-                    <img src="H-Letter-Logo.png" alt="Hyrind Logo" class="h-22 w-22 object-contain bg-hyrind-blue ">
+                <!-- Logo Container: Set to h-14 w-14 (roughly 3.5rem) to visually match the stacked text height -->
+                <div class="h-16 w-16 rounded-lg flex items-center justify-center mr-4 p-1">
+                    <!-- logo image: Use h-full w-full to fill the container, object-contain ensures aspect ratio is kept -->
+                    <img src="blue-logo.png" alt="Hyrind Logo" class="h-full w-full object-contain">
                 </div>
+                <!-- Text Block: Added 'leading-tight' to h1 and p to reduce vertical space and match logo height -->
                 <div>
-                    <h1 class="text-2xl font-extrabold text-hyrind-blue tracking-wider">HYRIND</h1>
-                    <p class="text-xs text-gray-500">You focus on skills, Let us handle the rest</p>
+                    <h1 class="text-2xl font-extrabold tracking-wider leading-tight" style="color: rgb(19, 19, 94);">HYRIND</h1>
+                    <p class="text-xs text-gray-500 leading-tight">You focus on skills, Let us handle the rest</p>
                 </div>
             </div>
 
